@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+// Inline CSS
+const headingStyle = {
+  backgroundColor: "purple",
+  color: "white",
+  padding: "15px",
+}
 
 ReactDOM.render(
-  <React.StrictMode>
+  <div>
+    <h1 style={headingStyle}>React App</h1><hr></hr>
     <App />
-  </React.StrictMode>,
+  </div>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
